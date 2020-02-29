@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	 <!-- Compiled and minified CSS -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	 <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   
+	
+	
+	<title>
+		Domains
+	</title>
+</head>
+<body>
+
+<style type="text/css">
+	section.section_header
+	{
+		width: 100%;
+		background-color: black;
+		margin-top: 0px;
+		padding: 100px;
+	}
+
+	h2
+	{
+		text-align: left;
+		font-size: 50px;
+		color: white;
+		font-family: Georgia, serif;
+		font-style: italic;
+	}
+
+	.domain-info
+	{
+		margin-top: 55px;
+	}
+
+	div.description
+	{
+		border: 2px #75579D;
+		padding: 20px;
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  		text-align: center;
+		transition-duration: 2s;
+	}
+	div.description:hover
+	{
+		border-radius: 50px;
+		position: relative;
+		color: white;
+		background-color: navy;
+
+	}
+	h2
+	{
+ 	 	text-shadow: 0 0 5px navy;
+	}
+
+
+	p
+	{
+		font-family: cursive;
+	}
+
+
+	.domains
+	{
+		margin-top: 90px;
+		padding: 25px;
+		cursor: pointer;
+	}
+
+.description-2
+	{
+		padding: 70px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transition-duration: 2s;
+		text-align: center;
+	}
+
+div.description-2:hover
+	{
+		
+		color: white;
+		background-color: navy;
+		border-radius: 20px;
+	}
+
+
+.description-3
+	{
+		padding: 70px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transition-duration: 2s;
+		vertical-align: text-top;
+		margin-top: 55px;
+	}
+
+	div.description-3:hover
+	{
+		
+		color: white;
+		background-color: navy;
+		border-radius: 20px;
+	}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  perspective: 1000px;
+  padding: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #111113;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h4
+{
+	font-family: fangsong;
+}
+
+.iconside {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .iconside {
+      clear: both;
+      display: block;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+  }
+}
+
+.icondesk{
+  width: 50px;
+  margin-left: 0;
+}
+
+.navhead{
+  color: black;
+  font-size: 20px;
+  
+}
+
+</style>
+		   <!--navbar-->
+		   <div class="navbar-fixed">
+			<nav class="white">
+				<div class="nav-wrapper nav_colour">
+				  <a href="#!" class="brand-logo">Logo</a>
+				  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				  <ul class="right hide-on-med-and-down">
+					<li ><a href="home.html"class="navhead">Home</a></li>
+					<li ><a href="Radiance.html" class="navhead">Radiance</a></li>
+					<li ><a href="domain.html"  class="navhead">Domains </a></li >
+					<li ><a href="gallery.html" class="navhead">Gallery</a></li>
+					<li ><a href="contactUs.html" class="navhead">Contact Us</a></li>
+				  </ul>
+				</div>
+			  </nav>
+			  </div>
+	
+	  <ul class="sidenav" id="mobile-demo">
+		<li><a href="home.html">Home</a></li>
+			<li><a href="Radiance.html">Radiance</a></li>
+			<li><a href="domain.html">Domains</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contactUs.html">Contact Us</a></li>
+	  </ul>
+
+	  <div class="icon-bar trans socialcolour iconside icondesk">
+		<a href="https://www.facebook.com/acmpict/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+		<a href="" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
+		<a href="https://pict.acm.org/#/home" target="_blank" class="google"><i class="fa fa-google"></i></a> 
+		<a href="https://www.linkedin.com/company/pict-acm-student-chapter" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	  </div>
+
+<section class="section_header">
+	<div class="container">
+		<div class="col-md-6">
+			<h2>Domains We Work In</h2>
+		</div>
+	</div>
+</section>
+
+<section class="domain-info">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="description">
+				<h3>Domains and SIGs</h3>
+				<p>
+					For the overall development of our members, we have created several SIGs namely, Machine learning, Web Development, Android Development, Competitive Coding, Electronics and Cyber Security.New domains are to be added such as Blockchain and Cloud Computing.
+					Regular meetups and teaching sessions are conducted by PASC members so that like-minded people can come together, interact and share knowledge with each other.
+					We nurture the growth of inquisitive minds by providing them with every opportunity to excel in various fields. The chapter organizes seminars and workshops on different domains by speakers who are well-known in their fields, which give students opportunities to learn about advanced research subjects.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="domains">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/AI.jpg" alt="ML" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Machine Learning</h4> 
+				      <p>Machine Learning is the future and PASC-W has active involvement in shaping students in this creative field</p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/android.jpg" alt="Android" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Android Development</h4> 
+				      <p>Now is a good time to pursue a career in Android development. It is not only an easy skill to learn, but also highly in demand.</p> 
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/web.png" alt="Web" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Web Development</h4> 
+				      <p>Web Development is one of the primary domains of PASC. The various chapter activities are organized to help students sharpen their Web-Dev skills.</p> 
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/blockchain.jpg" alt="Blockchain" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Blockchain</h4> 
+				      <p>Blockchain is the future of many businesses but not all. The key value proposition of blockchain is to provide transparency and efficiency...But decentralized blockchain solutions can. It heads back the control, data, and decision making to value creaters.</p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/competitive.jpg" alt="Competitive" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Competitive Coding</h4> 
+				      <p>The purpose of getting better at competitive programming is to improve your fundamental programming skills. It will give you the chance to work on cool projects</p> 
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="./images/cyber.jpg" alt="CyberSec" style="width:260px;height:260px;">
+				    </div>
+				    <div class="flip-card-back">
+				      <h4>Cyber Security</h4> 
+				      <p>The purpose of cybersecurity is to help prevent cyberattacks, data breaches and identity theft and can aid in risk management.</p> 
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<br>
+          <br>
+          <footer class="page-footer " style="background-color: #003a78;">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2014 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              </div>
+            </div>
+          </footer>
+
+
+<script src = "./js/home.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
